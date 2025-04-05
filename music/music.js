@@ -1,15 +1,22 @@
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
-const notes = [
-    { note: 'E5', duration: 0.5, time: 0 },    // Рас-цве
-    { note: 'F#5', duration: 0.5, time: 0.5 }, // та-ли
-    { note: 'B5', duration: 1.0, time: 1.0 },  // яб-ло-ни
-    { note: 'A5', duration: 0.5, time: 2.0 },  // и
-    { note: 'G#5', duration: 0.5, time: 2.5 }, // гру
-    { note: 'F#5', duration: 0.5, time: 3.0 }, // -ши
-    { note: 'E5', duration: 1.5, time: 3.5 }   // Поп-лы-ли ту-ма-ны...
-];
-
+    const notes = [
+        { note: 'G4', duration: 0.5, time: 0 },    
+        { note: 'G4', duration: 0.5, time: 0.5 },  
+        { note: 'A4', duration: 0.5, time: 1 },    
+        { note: 'B4', duration: 0.5, time: 1.5 },  
+        { note: 'B4', duration: 0.5, time: 2 },    
+        { note: 'A4', duration: 0.5, time: 2.5 },  
+        { note: 'G4', duration: 0.5, time: 3 },    
+        { note: 'F4', duration: 0.5, time: 3.5 },  
+        { note: 'E4', duration: 0.5, time: 4 },    
+        { note: 'E4', duration: 0.5, time: 4.5 },  
+        { note: 'F4', duration: 0.5, time: 5 },    
+        { note: 'G4', duration: 0.5, time: 5.5 },  
+        { note: 'G4', duration: 1, time: 6 },      
+        { note: 'F4', duration: 0.5, time: 7 },    
+        { note: 'F4', duration: 0.5, time: 7.5 }
+    ];
 
 function playFrequency(frequency, startTime, duration) {
     const oscillator = audioContext.createOscillator();
